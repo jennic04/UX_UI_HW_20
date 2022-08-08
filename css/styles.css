@@ -5,11 +5,14 @@
 
 @import url("./doiCaseStudyStyles.css");
 
+@import url("./fcocCaseStudyStyles.css");
+
 /* Styles for whole site */
 
 /* breakpoints for media queries chosen based on https://material.io/archive/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints */
 html {
     scroll-behavior: smooth;
+    font-size: 20px;
 }
 
 body {

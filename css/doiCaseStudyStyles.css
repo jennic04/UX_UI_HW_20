@@ -55,6 +55,7 @@
     border: 5px solid #133853;
 }
 
+/* Styles for Summary Section */
 .summary {
     /* border: 1px solid red; */
     display: flex;
@@ -92,8 +93,8 @@
 .decor {
     width: 225px;
     height: 24px;
-    background-color: #B1A79E;
-    margin: -28px 0 0 28px;
+    background-color: #CBC5C0;
+    margin: -26px 0 0 28px;
 }
 
 .background,
