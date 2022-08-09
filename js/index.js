@@ -1,13 +1,13 @@
 $(document).ready(function () {
     $(window).on("scroll", function () {
         if ($(this).scrollTop() > 500) {
-            $("#scroll").fadeIn();
+            $(".scrollToTop").fadeIn();
         } else {
-            $("#scroll").fadeOut();
+            $(".scrollToTop").fadeOut();
         }
     });
 
-    $("#scroll").on("click", function () {
+    $(".scrollToTop").on("click", function () {
         $("html, body").animate({ scrollTop: 0 }, 800);
         return false;
     });

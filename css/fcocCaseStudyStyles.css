@@ -42,6 +42,7 @@ nav a:hover {
     margin: 0.6rem 0 0 0;
 }
 
+/* Styles for FCOC Contents */
 .fcocContents {
     /* border: 1px solid red; */
     text-align: center;
@@ -64,10 +65,18 @@ nav a:hover {
     text-decoration: underline;
 }
 
+hr {
+    color: #B1A79E;
+    width: 65%;
+}
+
+.fcocBackground,
 .fcocResearch,
 .fcocDefinition,
 .fcocIdeation,
-.fcocPrototypes {
+.fcocPrototypes,
+.fcocTesting,
+.fcocReflections {
     width: 65%;
     margin: 0 auto;
 }
@@ -102,6 +111,10 @@ nav a:hover {
 }
 
 /* Styles for FCOC Ideation Section */
+
+.fcocIdeation .container {
+    padding: 0;
+}
 
 .fcocIdeation p {
     margin: 1.2rem 0 0 0;
@@ -164,4 +177,23 @@ nav a:hover {
     width: 25%;
     height: auto;
     margin: 1.2rem 1.2rem 0;
+}
+
+#fcocPrototypeLinksContainer {
+    background-color: #B1A79E;
+}
+
+#fcocPrototypeLinksContainer a {
+    color: #201E1F;
+    text-decoration: underline;
+}
+
+/* Styles for FCOC Testing Section */
+.fcocTesting p {
+    margin: 1.2rem 0 0 0;
+}
+
+/* Styles for FCOC Reflections Section */
+.fcocReflections p {
+    margin: 1.2rem 0 0 0;
 }

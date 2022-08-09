@@ -37,8 +37,9 @@
         <h1 class="font2">Friendship Circle of Colorado Redesign</h1>
         <h4>Redesign of a non-profit website to improve user flow and update the appearance.</h4>
     </section>
+
     <!-- Back to top button -->
-    <a href="#" id="scroll"><span></span></a>
+    <a href="#" class="scrollToTop"><span></span></a>
 
     <!-- Using Bootstrap column layout -->
     <div class="fcocSummary container">
@@ -65,7 +66,7 @@
     <!-- Bootstrap nav element -->
     <div class="fcocContents">
         <h4 class="font2">Contents</h4>
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center flex-column flex-md-row">
             <li class="nav-item">
                 <a class="nav-link py-0" href="#fcocBackground">Background</a>
             </li>
@@ -82,15 +83,17 @@
                 <a class="nav-link py-0" href="#fcocProto">Prototypes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link py-0" href="#">Testing</a>
+                <a class="nav-link py-0" href="#fcocTesting">Testing</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link py-0" href="#">Reflections</a>
+                <a class="nav-link py-0" href="#fcocReflections">Reflections</a>
             </li>
         </ul>
     </div>
 
-    <section class="background" id="fcocBackground">
+    <hr>
+
+    <section class="fcocBackground" id="fcocBackground">
         <div class="title">
             <h2 class="font2">Background<div class="decor"></div>
             </h2>
@@ -157,7 +160,7 @@
 
     </section>
 
-    <!-- Using Bootstrap Column layout -->
+    <!-- Using Bootstrap Column layout also using ordering utilities to adjust layout for responsivity -->
     <section class="fcocIdeation" id="fcocIdea">
         <div class="title">
             <h2 class="font2">Ideation<div class="decor"></div>
@@ -179,11 +182,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="fcocSec2 col-lg-6 col-sm-12">
+                <div class="fcocSec2 col-lg-6 col-sm-12 order-last order-lg-first">
                     <img src="./Assets/FCOC_UserFlow.png" alt="Flowchart with path a user may follow to RSVP at FCOC"
                         id="fcocUserFlow">
                 </div>
-                <div class="fcocSec2 col-lg-6 col-sm-12">
+                <div class="fcocSec2 col-lg-6 col-sm-12 order-first order-lg-last">
                     <p>With a new information architecture set, we next looked at the user flow. We focused on the RSVP
                         process because every user during testing had not been able to find how the RSVP for an event.
                         We created the user flow below for the process.</p>
@@ -260,36 +263,65 @@
             high-fidelity prototype. We were asked by the FCOC to keep the white, teal, and purple. We wanted to keep
             the site fun and welcoming so we added pink and orange to create some contrast and interest.</p>
 
-        <!-- NTS: Update the links here! -->
-        <div id="prototypeLinksContainer">
+        <div id="fcocPrototypeLinksContainer">
             <div class="prototypeLinks">
                 <figure id="mobilePrototype">
                     <a
-                        href="https://www.figma.com/proto/ktK5BNP1uQuQCGwBLmAGZC/HW11%2F12?node-id=25%3A5055&scaling=scale-down&page-id=22%3A1231&starting-point-node-id=25%3A5055"><img
-                            src="Assets/DOI_mobile_mockup.png"
+                        href="https://www.figma.com/proto/iEleBrAJcrwLi4oaeZvY9z/Nonprofit-Website-Friendship-Circle-Of-Colorado-(Copy)?node-id=97%3A269&scaling=scale-down&page-id=29%3A2&starting-point-node-id=97%3A269"><img
+                            src="Assets/FCOC_MobileMockup.png"
                             alt="A mobile phone with an image of the DOI website on the screen"></a>
                     <figcaption><a
-                            href="https://www.figma.com/proto/ktK5BNP1uQuQCGwBLmAGZC/HW11%2F12?node-id=25%3A5055&scaling=scale-down&page-id=22%3A1231&starting-point-node-id=25%3A5055">Mobile
+                            href="https://www.figma.com/proto/iEleBrAJcrwLi4oaeZvY9z/Nonprofit-Website-Friendship-Circle-Of-Colorado-(Copy)?node-id=97%3A269&scaling=scale-down&page-id=29%3A2&starting-point-node-id=97%3A269">Mobile
                             Prototype</a></figcaption>
                 </figure>
                 <figure id="desktopPrototype">
                     <a
-                        href="https://www.figma.com/proto/ktK5BNP1uQuQCGwBLmAGZC/HW11%2F12?node-id=25%3A5900&scaling=scale-down&page-id=22%3A1232&starting-point-node-id=25%3A5900&show-proto-sidebar=1"><img
-                            src="Assets/DOI_laptop_mockup.png"
+                        href="https://www.figma.com/proto/iEleBrAJcrwLi4oaeZvY9z/Nonprofit-Website-Friendship-Circle-Of-Colorado-(Copy)?node-id=97%3A59&scaling=scale-down&page-id=97%3A58&starting-point-node-id=97%3A59"><img
+                            src="Assets/FCOC_LaptopMockup.png"
                             alt="A laptop with an image of the DOI website on the screen"></a>
                     <figcaption><a
-                            href="https://www.figma.com/proto/ktK5BNP1uQuQCGwBLmAGZC/HW11%2F12?node-id=25%3A5900&scaling=scale-down&page-id=22%3A1232&starting-point-node-id=25%3A5900&show-proto-sidebar=1">Desktop
+                            href="https://www.figma.com/proto/iEleBrAJcrwLi4oaeZvY9z/Nonprofit-Website-Friendship-Circle-Of-Colorado-(Copy)?node-id=97%3A59&scaling=scale-down&page-id=97%3A58&starting-point-node-id=97%3A59">Desktop
                             Prototype</a></figcaption>
                 </figure>
             </div>
         </div>
     </section>
 
+    <section class="fcocTesting" id="fcocTesting">
+        <div class="title">
+            <h2 class="font2">Testing<div class="decor"></div>
+            </h2>
+        </div>
+        <p>We conducted another round of usability tests on the high fidelity prototype. We again asked the users to
+            RSVP for an event, find where volunteer information would be located, and find the mission of the
+            organization.
+        </p>
+        <p>Users were able to complete all tasks without frustration or issues. Feedback indicated that the redesign
+            felt more modern and welcoming, and users were glad to see event details on the site.
+        </p>
+    </section>
+
+    <section class="fcocReflections" id="fcocReflections">
+        <div class="title">
+            <h2 class="font2">Reflections<div class="decor"></div>
+            </h2>
+        </div>
+        <p>One of the most beneficial parts of this project was learning to work within constraints provided by the
+            FCOC. The Program Manager was very generous in answering our questions and also let us know they would want
+            certain things to be included or maintained in our design. This included wording in the RSVP confirmation
+            and overall color scheme among other things. Creating a design that worked well for the user within this
+            frame was a challenge, but also rewarding.</p>
+    </section>
+
+    <footer>
+        <h5 class="font2">info@jenchristner.com</h5>
+        <a href="http://www.linkedin.com/in/jen-christner">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <p class="font2">&copy; Jen Christner 2022</p>
+    </footer>
 
 
-    <!-- Scripts for jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./js/index.js"></script>
 
     <!-- Scripts for Bootsrap 4.6 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -298,6 +330,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+
+    <!-- Scripts for jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
